@@ -1,0 +1,80 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">#222222</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#818181</item>
+        <item name="android:colorSecondary">#000</item>
+        <item name="android:textViewStyle">@style/cairo</item>
+
+    </style>
+
+    <style name="font_vexa" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">#222222</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#818181</item>
+        <item name="android:colorSecondary">#000</item>
+        <item name="android:textViewStyle">@style/vexa</item>
+
+    </style>
+    <style name="forsha_font" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">#222222</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#818181</item>
+        <item name="android:colorSecondary">#000</item>
+        <item name="android:textViewStyle">@style/forsha</item>
+
+    </style>
+    <style name="somra_font" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">#222222</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#818181</item>
+        <item name="android:colorSecondary">#000</item>
+        <item name="android:textViewStyle">@style/somra</item>
+
+    </style>
+    <style name="bepo_font" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="titleTextColor">#222222</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorSecondary">#818181</item>
+        <item name="android:colorSecondary">#000</item>
+        <item name="android:textViewStyle">@style/bepo</item>
+
+    </style>
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <style name="cairo" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/font_cairo</item>
+    </style>
+       <style name="vexa" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/vexa_font</item>
+    </style>
+    <style name="forsha" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/forsha_font</item>
+    </style>
+    <style name="somra" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/somra_font</item>
+    </style>
+    <style name="bepo" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/bepo_font</item>
+    </style>
+
+</resources>

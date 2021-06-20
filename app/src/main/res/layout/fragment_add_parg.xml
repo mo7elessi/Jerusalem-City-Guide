@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AddInfo">
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="اضافة معلومة"
+            android:textColor="#404040"
+            android:textSize="@dimen/text_normal"
+            android:textAlignment="textStart"
+            android:layout_marginEnd="10dp"/>
+
+    </androidx.appcompat.widget.Toolbar>
+    <EditText
+        android:id="@+id/title"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edit"
+        android:gravity="top|right"
+        android:hint="أدخل عنوان المعلومة هنا"
+        android:inputType="text"
+        android:padding="15sp"
+        android:textSize="@dimen/text_small"
+        />
+
+    <TextView
+        android:id="@+id/validTitle"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#F44336"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/desc"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit"
+        android:gravity="top|right"
+        android:hint="أدخل تفاصيل المعلومة هنا"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:padding="15sp"
+        android:scrollbarStyle="insideInset"
+        android:textSize="@dimen/text_small" />
+    <TextView
+        android:id="@+id/validDesc"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#F44336"
+        android:textSize="14sp" />
+    <Button
+        android:id="@+id/btnBarg"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_btn"
+        android:text="حفظ"
+        android:textSize="@dimen/text_small"
+        android:textColor="#010101"/>
+</LinearLayout>

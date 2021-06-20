@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:id="@+id/btnAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="2dp"
+                android:text="إضافة"
+                android:textColor="#404040"
+                android:textSize="@dimen/text_normal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_add_black_24dp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="دليل مدينة القدس"
+            android:textAlignment="textStart"
+            android:textColor="#404040"
+            android:textSize="@dimen/text_normal" />
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/showNews"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="أخبار مباشرة عن القدس"
+        android:textColor="#404040"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/showInfo"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="معلومات عامة عن القدس"
+
+        android:textColor="#404040"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/showImages"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="صور لمعالم في القدس"
+
+        android:textColor="#404040"
+        android:textSize="@dimen/text_medium" />
+
+    <TextView
+        android:id="@+id/showVideos"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="فيديوهات للقدس"
+        android:textColor="#404040"
+        android:textSize="@dimen/text_medium" />
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_btn"
+        android:gravity="center"
+        android:text="اعدادات التطبيق"
+        android:textColor="#404040"
+        android:textSize="@dimen/text_medium" />
+
+
+
+</LinearLayout>
+

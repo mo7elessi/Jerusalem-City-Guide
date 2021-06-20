@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".settings">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:id="@+id/titletoolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="الإعدادت"
+            android:textAlignment="textStart"
+            android:textColor="#404040"
+            android:textSize="@dimen/text_normal" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="الوضع الحالي"
+        android:textSize="@dimen/text_normal" />
+
+    <Switch
+        android:id="@+id/switch_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:fontFamily="@font/font_cairo"
+        android:switchMinWidth="5dp"
+        android:textSize="@dimen/text_small"
+        android:switchPadding="10dp"
+        android:text="وضع النهار مفعل حاليا"
+        android:checked="false"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="تغير توع خط التطبيق"
+        android:layout_marginRight="10dp"
+        android:textSize="@dimen/text_normal" />
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="end"
+        android:layout_marginRight="20dp"
+        android:padding="14dp"
+        >
+
+        <RadioButton
+            android:id="@+id/radio0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="كايرو"
+            style="@style/cairo"
+            android:textSize="@dimen/text_medium"/>
+        <RadioButton
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" فيكسا"
+            style="@style/vexa"
+            android:textSize="@dimen/text_medium"/>
+        <RadioButton
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" فرشاة"
+            style="@style/forsha"
+            android:textSize="@dimen/text_medium"/>
+        <RadioButton
+            android:id="@+id/radio3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" بيبو"
+            style="@style/bepo"
+            android:textSize="@dimen/text_medium"/>
+        <RadioButton
+            android:id="@+id/radio4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" سومرا"
+            style="@style/somra"
+            android:textSize="@dimen/text_medium"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/reRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="ليتم تطبيق الاعددات قم باعدة تشغيل التطبيق"
+        android:textSize="@dimen/text_normal"
+        android:visibility="gone"
+         android:textColor="@color/colorPrimary"/>
+</LinearLayout>

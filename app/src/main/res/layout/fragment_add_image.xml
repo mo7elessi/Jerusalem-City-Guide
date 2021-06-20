@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.AddImage">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            style="@style/cairo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="اضافة صورة"
+            android:textAlignment="textStart"
+            android:textColor="#404040"
+            android:textSize="@dimen/text_normal" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_toStartOf="@+id/pickImage"
+            android:scaleType="centerCrop"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/pickImage"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/ic_cloud_upload_black_24dp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textUpload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:text="قم بإختيار صورة من المعرض"
+        android:textSize="@dimen/text_small" />
+
+    <EditText
+        android:id="@+id/titleImage"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/shape_edit"
+        android:gravity="top|right"
+        android:hint="أدخل العنوان"
+        android:inputType="text"
+        android:padding="15sp"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/validTitleImage"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#F44336"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/descImage"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shape_edit"
+        android:gravity="top|right"
+        android:hint="أدخل الوصف"
+        android:inputType="textMultiLine"
+        android:overScrollMode="always"
+        android:padding="15sp"
+        android:scrollbarStyle="insideInset"
+        android:textSize="@dimen/text_small" />
+
+    <TextView
+        android:id="@+id/validDescImage"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="#F44336"
+        android:textSize="14dp" />
+
+    <Button
+        android:id="@+id/btnUpload"
+        style="@style/cairo"
+        android:layout_width="380dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/shape_btn"
+        android:text="حفظ"
+        android:textSize="@dimen/text_small"
+        android:textColor="#101010"/>
+
+</LinearLayout>
