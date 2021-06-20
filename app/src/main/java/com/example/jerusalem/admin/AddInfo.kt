@@ -72,7 +72,8 @@ class AddInfo : Fragment() {
             .add(info)
             .addOnSuccessListener { documentReference ->
                 pd.dismiss()
-                Toast.makeText(activity!!, "تم الحفظ بنجاح", Toast.LENGTH_SHORT)
+                Toast.makeText(activity, "تم الحفظ بنجاح", Toast.LENGTH_SHORT).show()
+
                 Log.e(TAG, "paragraph added, paragraph id ${documentReference.id}")
             }
             .addOnFailureListener { exception ->

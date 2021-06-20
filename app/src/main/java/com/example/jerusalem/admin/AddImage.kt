@@ -99,11 +99,18 @@ class AddImage : Fragment() {
                         date,
                         fileUri.toString()
                     )
+                    titleImage.setText("")
+                    descImage.setText("")
+                    pickImage.setImageResource(R.drawable.ic_cloud_upload_black_24dp)
+                    textUpload.setText("قم بإختيار صورة")
+
                 }
 
                 Log.e("TAG", "Uploaded...")
                 Toast.makeText(activity, "تم الحفظ بنجاح", Toast.LENGTH_SHORT).show()
                 pd.dismiss()
+
+
             }
                 .addOnFailureListener { e ->
                     Log.e("TAG", "Failed...")
