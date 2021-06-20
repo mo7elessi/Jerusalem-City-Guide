@@ -79,7 +79,6 @@ class AddImage : Fragment() {
 
         }
     }
-
     private fun uploadImage() {
         if (imageUri != null) {
             val pd = ProgressDialog(activity)

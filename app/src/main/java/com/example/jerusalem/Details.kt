@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.fragment_news_detail.view.*
  * A simple [Fragment] subclass.
  */
 class Details : Fragment() {
-
+    
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
